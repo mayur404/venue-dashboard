@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gig Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="../css/screen.css">
+	<script type="text/javascript" src="../js/jqueryslim.js"></script>
+	<script type="text/javascript" src="../js/parse.js"></script>
+	<script type="text/javascript" src="../js/general.js"></script>
+</head>
+<body>
+	<div class="navigationHeader">
+		<div class="contentContainer">
+			<div class="logo">
+				<img class="logoImg" src="../img/logo.png">
+			</div>
+			<div class="navigationBar">
+				<a href="../home"><div class="navItem selected">Summary</div></a>
+				<a href="../messenger"><div class="navItem ">Messenger</div></a>
+				<a href="../sms"><div class="navItem">SMS</div></a>
+				<a href="../offers"><div class="navItem">Offers</div></a>
+				<a href="../events"><div class="navItem">Events</div></a>
+				<a href="../ticketing"><div class="navItem">Ticketing</div></a>
+			</div>
+			<div class="settingsBar">
+				<div class="logoutBtn">Log Out</div>
+				<a href="../settings"><img class="settingsImg" src="../img/settings.png"></a>
+			</div>
+		</div>
+	</div>
+	<div class="contentHeader">
+	<div class="contentContainer">
+		<div class="clientCover">
+			<img class="clientCoverImg" src="">
+		</div>
+		<div class="clientTitle">
+			<div class="clientGreeting">Hello, <span class="clientName"></span></div>
+			<div class="clientLocality">Mundhwa</div>
+			<div class="linkToBot">Link to Messenger Bot</div>
+		</div>
+		<div class="homeStatistics">
+			<div class="userCount homeCount">
+				<div class="userCountN number">-</div>
+				<div class="countSubTitle">users onboard</div>
+			</div>
+			<div class="queryCount homeCount">
+				<div class="queryCountN number">-</div>
+				<div class="countSubTitle">queries resolved</div>
+			</div>
+			<div class="ticketCount homeCount">
+				<div class="ticketCountN number">-</div>
+				<div class="countSubTitle">tickets <br/>sold</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="mainContainer">
+	<div class="leftContainer">
+	<div class="content messengerSummary">
+		<div class="contentLoader"><div class="loader__figure"></div></div>
+		<div class="contentTitle">Messenger Summary</div>
+		<div class="contentSubTitle">Total users onboarded on Messenger</div>
+		<div class="statisticNumber"><span class="userCountN">0</span><span class="statisticNumberSpan">Users</span></div>
+		<a href="../messenger-users"><div class="contentLink openIcon">See all users</div></a>
+	</div>
+	<div class="content messengerQuerySummary">
+		<div class="contentLoader"><div class="loader__figure"></div></div>
+		<div class="contentTitle">Queries Summary</div>
+		<div class="contentSubTitle">Number of queries resolved on Messenger</div>
+		<div class="statisticNumber"><span class="queryCountN">0</span><span class="statisticNumberSpan">Queries</span></div>
+	</div>
+	<div class="content messengerBroadcastMessage">
+		<div class="contentTitle">Broadcast Message</div>
+		<div class="contentSubTitle">Send messages directly into Messenger</div>
+		<div class="contentLink addIcon">Send a new broadcast</div>
+	</div>
+	
+	<div class="content messengerBroadcastOffer">
+		<div class="contentTitle">Broadcast Offers</div>
+		<div class="contentSubTitle">Send offers directly into Messenger</div>
+		<div class="contentLink addIcon">Broadcast new offers</div>
+	</div>
+
+	<div class="content" >
+				<div class="contentTitle">Broadcast via SMS</div>
+				<div class="contentSubTitle">Send messages via SMS</div>
+				<div class="contentLink addIcon">Send a new broadcast</div>
+			</div>
+	<div class="content" >
+				<div class="contentTitle">Broadcast Offers via SMS</div>
+				<div class="contentSubTitle">Send offers directly via SMS</div>
+				<div class="contentLink addIcon">Broadcast new offers</div>
+	</div>
+	
+	</div>
+	<div class="centerContainer">
+	<div class="content messengerUpcomingEvent">
+		<div class="contentLoader"><div class="loader__figure"></div></div>
+		<div class="contentTitle">Upcoming Event</div>
+		<div class="contentMediumText messengerUpcomingEventTitle">-</div>
+		<div class="contentSubTitle messengerUpcomingEventTime">-</div>
+		<div data-action="messengerEventBroadcast" data-eventId="null" class="contentLink addIcon actionBtn">Broadcast on Messenger</div>
+	</div>
+	
+	<div class="content messengerMessageRequest">
+		<div class="contentLoader hidden"><div class="loader__figure"></div></div>
+		<div class="contentTitle">Message Requests</div>
+		<div class="contentSubTitle">This contains all the queries that are sent directly to you</div>
+		<!--div class="requestMiniContainer dark">
+			<img src="../img/profile.png" class="userMiniProfile">
+			<div class="userContent">
+				<div class="userTitle">Mayur More</div>
+				<div class="userRequest">When will the tickets to Cookout be available?</div>
+				<div class="userActions">
+					<div class="replyRequestAction">Reply</div>
+					<div class="ignoreRequestAction">Ignore</div>
+				</div>
+			</div>
+		</div>
+		<div class="requestMiniContainer light">
+			<img src="../img/profile.png" class="userMiniProfile">
+			<div class="userContent">
+				<div class="userTitle">Mayur More</div>
+				<div class="userRequest">What's the entry for stags?</div>
+				<div class="userActions">
+					<div class="replyRequestAction">Reply</div>
+					<div class="ignoreRequestAction">Ignore</div>
+				</div>
+			</div>
+		</div>
+		<div class="requestMiniContainer dark">
+			<img src="../img/profile.png" class="userMiniProfile">
+			<div class="userContent">
+				<div class="userTitle">Mayur More</div>
+				<div class="userRequest">Do you guys serve wine at the event tommorow?</div>
+				<div class="userActions">
+					<div class="replyRequestAction">Reply</div>
+					<div class="ignoreRequestAction">Ignore</div>
+				</div>
+			</div>
+		</div-->
+		<div class="allBtn">No Message Requests</div>
+	</div>
+	</div>
+	<div class="rightContainer">
+	<div class="content messengerRecentUsers">
+		<div class="contentLoader"><div class="loader__figure"></div></div>
+		<div class="contentTitle">Recent Users</div>
+		<div class="contentSubTitle">List of users subscribed to <span class="venueNameSpan"></span> on Messenger</div>
+	
+		<!--div class="allBtn">View All ></div-->
+	</div>
+	</div>
+	</div>
+</body>
+<script type="text/javascript" src="../js/home.js"></script>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gig Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="../css/screen.css">
+	<script type="text/javascript" src="../js/jqueryslim.js"></script>
+	<script type="text/javascript" src="../js/parse.js"></script>
+	<script type="text/javascript" src="../js/general.js"></script>
+</head>
+<body>
+	<div class="navigationHeader">
+		<div class="contentContainer">
+			<div class="logo">
+				<img class="logoImg" src="../img/logo.png">
+			</div>
+			<div class="navigationBar">
+				<a href="../home"><div class="navItem ">Summary</div></a>
+				<a href="../messenger"><div class="navItem ">Messenger</div></a>
+				<a href="../sms"><div class="navItem selected">SMS</div></a>
+				<a href="../offers"><div class="navItem">Offers</div></a>
+				<a href="../events"><div class="navItem">Events</div></a>
+				<a href="../ticketing"><div class="navItem">Ticketing</div></a>
+			</div>
+			<div class="settingsBar">
+				<div class="logoutBtn">Log Out</div>
+				<a href="../settings"><img class="settingsImg" src="../img/settings.png"></a>
+			</div>
+		</div>
+	</div>
+	<div class="mainContainer">
+		<div class="leftContainer">
+			<div class="content">
+				<div class="contentTitle">SMS Summary</div>
+				<div class="contentSubTitle">Total users onboarded via SMS</div>
+				<div class="statisticNumber">25<span class="statisticNumberSpan">Users</span></div>
+				<div class="contentLink openIcon">See all users</div>
+			</div>
+			<div class="content" >
+				<div class="contentTitle">Broadcast via SMS</div>
+				<div class="contentSubTitle">Send messages via SMS</div>
+				<div class="contentLink addIcon">Send a new broadcast</div>
+			</div>
+			<div class="content" >
+				<div class="contentTitle">Broadcast Offers via SMS</div>
+				<div class="contentSubTitle">Send offers directly via SMS</div>
+				<div class="contentLink addIcon">Broadcast new offers</div>
+			</div>
+			
+			<div class="content hidden" >
+				<div class="contentTitle">Upcoming Event</div>
+				<div class="contentMediumText">Venkys Presents the High Cookout feat. DJ Nucleya</div>
+				<div class="contentSubTitle">19 APR @ 7:30 PM</div>
+				<div class="contentLink addIcon">Broadcast via SMS</div>
+				<div class="options">
+					<div class="option">
+						<div class="feedbackText">Are you sure?</div>
+						<div class="feedbackAction no">No</div>
+						<div class="feedbackAction yes">Yes</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="centerContainer">
+			<div class="content" >
+				<div class="contentTitle">Total SMS sent</div>
+				<div class="contentSubTitle">Number of queries resolved on Messenger</div>
+				<div class="statisticNumber">0<span class="statisticNumberSpan">Sent</span></div>
+				<div class="contentLink openIcon">Most asked queries</div>
+			</div>
+			<div class="content" >
+				<div class="contentTitle">Add User to SMS list</div>
+				<div class="contentSubTitle">Add user to your sms subscription list</div>
+				<div class="contentSubTitle inputHeading" style="margin-top: 20px;">Phone Number (Mandatory)</div>
+				<input class="contentInput" type="text">
+				<div class="contentSubTitle inputHeading">Name</div>
+				<input class="contentInput" type="text">
+				<div class="contentSubTitle inputHeading">Birthday</div>
+				<input class="contentInput" type="date">
+				<div class="contentSubTitle inputHeading">Anniversary</div>
+				<input class="contentInput" type="date" style="margin-bottom: 35px;">
+				<div class="contentLink addIcon">Add</div>
+			</div>
+		</div>
+		<div class="rightContainer">
+			<div class="content">
+				<div class="contentTitle">SMS Balance</div>
+				<div class="contentSubTitle">Total balance remaining</div>
+				<div class="statisticNumber">10000<span class="statisticNumberSpan">Remaining</span></div>
+				<div class="contentLink openIcon">Recharge</div>
+			</div>
+			<div class="content" >
+				<div class="contentTitle">SMS Users</div>
+				<div class="contentSubTitle">List of users added to High Spirits SMS list</div>
+				<div class="userMiniContainer dark">
+					<img src="../img/profile1.png" class="userMiniProfile">
+					<div class="userContent">
+						<div class="userTitle">9028562767</div>
+						<div class="userCity">Mayur More</div>
+						<div class="userActions">
+							<div class="sendMessageAction">Message</div>
+							<div class="sendOfferAction">Send Offer</div>
+						</div>
+					</div>
+				</div>
+				<div class="userMiniContainer light">
+					<img src="../img/profile2.png" class="userMiniProfile">
+					<div class="userContent">
+						<div class="userTitle">787548055</div>
+						<div class="userCity">Bilal Chaglani</div>
+						<div class="userActions">
+							<div class="sendMessageAction">Message</div>
+							<div class="sendOfferAction">Send Offer</div>
+						</div>
+					</div>
+				</div>
+				<div class="userMiniContainer dark">
+					<img src="../img/profile3.png" class="userMiniProfile">
+					<div class="userContent">
+						<div class="userTitle">9822870355</div>
+						<div class="userCity">Unavailable</div>
+						<div class="userActions">
+							<div class="sendMessageAction">Message</div>
+							<div class="sendOfferAction">Send Offer</div>
+						</div>
+					</div>
+				</div>
+				<div class="userMiniContainer light">
+					<img src="../img/profile4.png" class="userMiniProfile">
+					<div class="userContent">
+						<div class="userTitle">9561287162</div>
+						<div class="userCity">Unavailable</div>
+						<div class="userActions">
+							<div class="sendMessageAction">Message</div>
+							<div class="sendOfferAction">Send Offer</div>
+						</div>
+					</div>
+				</div>
+				<div class="userMiniContainer dark">
+					<img src="../img/profile5.png" class="userMiniProfile">
+					<div class="userContent">
+						<div class="userTitle">9971382945</div>
+						<div class="userCity">Unavailable</div>
+						<div class="userActions">
+							<div class="sendMessageAction">Message</div>
+							<div class="sendOfferAction">SendOffer</div>
+						</div>
+					</div>
+				</div>
+				<div class="allBtn">View All ></div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+	</div>
+</body>
+
+</html>

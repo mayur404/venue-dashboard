@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gig Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="../css/screen.css">
+	<script type="text/javascript" src="../js/jqueryslim.js"></script>
+	<script type="text/javascript" src="../js/parse.js"></script>
+	<script type="text/javascript" src="../js/general.js"></script>
+</head>
+<body>
+	<div class="navigationHeader">
+		<div class="contentContainer">
+			<div class="logo">
+				<img class="logoImg" src="../img/logo.png">
+			</div>
+			<div class="navigationBar">
+				<a href="../home"><div class="navItem ">Home</div></a>
+				<a href="../messenger"><div class="navItem selected">Messenger Users</div></a>
+				<a href="../sms"><div class="navItem">SMS Users</div></a>
+			</div>
+			<div class="settingsBar">
+				<div class="logoutBtn">Log Out</div>
+				<a href="../settings"><img class="settingsImg" src="../img/settings.png"></a>
+			</div>
+		</div>
+	</div>
+	<div class="mainContainer">
+	<div class="leftContainer">
+	<div class="content messengerUserSummary">
+		<div class="contentLoader"><div class="loader__figure"></div></div>
+		<div class="contentTitle">Messenger User Summary</div>
+		<div class="contentSubTitle">Total users onboarded on Messenger</div>
+		<div class="statisticNumber"><span class="userCountN">0</span><span class="statisticNumberSpan">Users</span></div>
+	</div>
+	<div class="content messengerUserFilter">
+		<div class="contentLoader" style="display: none"><div class="loader__figure"></div></div>
+		<div class="contentTitle">Search Filters</div>
+		<div class="contentSubTitle">Narrow down your user search</div>
+		<div data-action="filter" data-index="0" class="searchFilter">Onboarded today</div>
+		<div data-action="filter" data-index="1" class="searchFilter">Onboarded this month</div>
+		<div data-action="filter" data-index="2" class="searchFilter">Male users</div>
+		<div data-action="filter" data-index="3" class="searchFilter">Female users</div>
+		<div data-action="filter" data-index="4" class="searchFilter">Bought tickets atleast once</div>
+		<div data-action="filter" data-index="5" class="searchFilter">Bought tickets more than once</div>
+	</div>
+	
+	</div>
+	<div class="rightFullContainer">
+		<div class="searchUserBar">
+			<input class="searchUserInput" type="text" placeholder="Search Users">
+			<img src="../img/search.png" class="searchUserBarImg" />
+		</div>
+		<div class="broadcastAllUsers contentLink addIcon">Broadcast</div>
+		<div class="sendOfferAllUsers contentLink addIcon">Send Offer</div>
+		<div class="content messengerRecentUsers">
+			<div class="contentLoader"><div class="loader__figure"></div></div>
+			<div class="contentTitle">All Users</div>
+			<div class="contentSubTitle">List of users subscribed to <span class="venueNameSpan"></span> on Messenger</div>
+			<div class="messengerUserResults">
+			</div>
+			<!--div class="allBtn">View All ></div-->
+		</div>
+	</div>
+	</div>
+</body>
+<script type="text/javascript" src="../js/messengerusers.js"></script>
+</html>
